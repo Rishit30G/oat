@@ -159,7 +159,11 @@
         <h3>Sizes</h3>
         <div class="demo-row">
           <button class="sm">Small</button>
-          <button>Default</button>
+
+          <button>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3" /><path d="M12 1v4m0 14v4M4.22 4.22l2.83 2.83m9.9 9.9l2.83 2.83M1 12h4m14 0h4M4.22 19.78l2.83-2.83m9.9-9.9l2.83-2.83" /></svg> Default
+          </button>
+
           <button class="lg">Large</button>
         </div>
 
@@ -227,10 +231,12 @@
         </form>
 
         <h3>Input Group</h3>
-        <div class="input-group" style="max-width: 400px;">
-          <span>https://</span>
-          <input type="text" placeholder="example.com">
-          <button>Go</button>
+        <div style="max-width: 400px;">
+          <fieldset class="input-group">
+            <legend>https://</legend>
+            <input type="url" placeholder="example.com">
+            <button>Go</button>
+          </fieldset>
         </div>
 
         <h3>Field with Error</h3>
