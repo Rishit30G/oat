@@ -11,36 +11,40 @@
     font-weight: var(--lm-font-semibold);
     line-height: var(--lm-leading-tight);
     letter-spacing: var(--lm-tracking-tight);
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   h1 {
     font-size: var(--lm-text-4xl);
-    margin-bottom: var(--lm-space-6);
+    margin: var(--lm-space-10) 0 var(--lm-space-6);
   }
 
   h2 {
     font-size: var(--lm-text-3xl);
-    margin-bottom: var(--lm-space-5);
+    margin: var(--lm-space-8) 0 var(--lm-space-5);
   }
 
   h3 {
     font-size: var(--lm-text-2xl);
-    margin-bottom: var(--lm-space-4);
+    margin: var(--lm-space-6) 0 var(--lm-space-4);
   }
 
   h4 {
     font-size: var(--lm-text-xl);
-    margin-bottom: var(--lm-space-3);
+    margin: var(--lm-space-5) 0 var(--lm-space-3);
   }
 
   h5 {
     font-size: var(--lm-text-lg);
-    margin-bottom: var(--lm-space-2);
+    margin: var(--lm-space-4) 0 var(--lm-space-2);
   }
 
   h6 {
     font-size: var(--lm-text-base);
-    margin-bottom: var(--lm-space-2);
+    margin: var(--lm-space-4) 0 var(--lm-space-2);
   }
 
   p {
