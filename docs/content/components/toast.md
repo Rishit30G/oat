@@ -32,7 +32,7 @@ lm.toast('Bottom right', '',{ placement: 'bottom-right' })
 | ----------- | ------------- | ------------------------------------ |
 | `variant`   | `''`          | `'success'`, `'danger'`, `'warning'` |
 | `placement` | `'top-right'` | Position on screen                   |
-| `duration`  | `5000`        | Auto-dismiss in ms (0 = persistent)  |
+| `duration`  | `4000`        | Auto-dismiss in ms (0 = persistent)  |
 
 ## Custom markup
 

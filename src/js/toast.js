@@ -9,7 +9,7 @@
  *
  *   // Custom markup
  *   lm.toastEl(element)
- *   lm.toastEl(element, { duration: 5000, placement: 'bottom-center' })
+ *   lm.toastEl(element, { duration: 4000, placement: 'bottom-center' })
  *   lm.toastEl(document.querySelector('#my-template'))
  */
 
@@ -106,6 +106,8 @@ lm.toastEl = function (el, options = {}) {
 
   if (el instanceof HTMLTemplateElement) {
     toast = el.content.firstElementChild.cloneNode(true);
+  } else if (typeof el === 'string') {
+    toast = document.querySelector(el).cloneNode(true);
   } else {
     toast = el.cloneNode(true);
   }
