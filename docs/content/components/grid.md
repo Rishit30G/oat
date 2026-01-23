@@ -8,16 +8,16 @@ Use `.container`, `.row`, and `.col` classes. Column widths use `.col-{n}` and r
 
 {% demo() %}
 ```html
-<div class="container" style="background: var(--lm-muted); padding: var(--lm-space-4); border-radius: var(--lm-radius);">
+<div class="container" style="background: var(--muted); padding: var(--space-4); border-radius: var(--radius);">
   <div class="row">
-    <div class="col col-12 col-medium-6 col-large-4" style="background: var(--lm-primary); color: var(--lm-primary-foreground); padding: var(--lm-space-4); border-radius: var(--lm-radius);">
-      col-12 col-medium-6 col-large-4
+    <div class="col col-12" style="background: var(--primary); color: var(--primary-foreground); padding: var(--space-4); border-radius: var(--radius);">
+      col-12
     </div>
-    <div class="col col-12 col-medium-6 col-large-4" style="background: var(--lm-primary); color: var(--lm-primary-foreground); padding: var(--lm-space-4); border-radius: var(--lm-radius);">
-      col-12 col-medium-6 col-large-4
+    <div class="col col-12" style="background: var(--primary); color: var(--primary-foreground); padding: var(--space-4); border-radius: var(--radius);">
+      col-12
     </div>
-    <div class="col col-12 col-large-4" style="background: var(--lm-primary); color: var(--lm-primary-foreground); padding: var(--lm-space-4); border-radius: var(--lm-radius);">
-      col-12 col-large-4
+    <div class="col col-12" style="background: var(--primary); color: var(--primary-foreground); padding: var(--space-4); border-radius: var(--radius);">
+      col-12
     </div>
   </div>
 </div>

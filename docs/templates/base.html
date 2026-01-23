@@ -10,9 +10,9 @@
   <script src="/main.js"></script>
   <style>
     .demo-section {
-      margin-bottom: var(--lm-space-18);
-      padding-bottom: var(--lm-space-8);
-      border-bottom: 1px solid var(--lm-border);
+      margin-bottom: var(--space-18);
+      padding-bottom: var(--space-8);
+      border-bottom: 1px solid var(--border);
     }
 
     .demo-section:last-child {
@@ -20,16 +20,16 @@
     }
 
     .demo-box {
-      border: 1px solid var(--lm-border);
+      border: 1px solid var(--border);
       padding: 30px;
       border-radius: 3px;
-      margin-top: var(--lm-space-4);
+      margin-top: var(--space-4);
     }
 
     .demo-box .demo-content {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--lm-space-4);
+      gap: var(--space-4);
       align-items: center;
     }
 
@@ -51,7 +51,7 @@
 
     .demo-grid {
       display: grid;
-      gap: var(--lm-space-4);
+      gap: var(--space-4);
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
@@ -65,27 +65,27 @@
       width: 20rem;
     }
     .demo-sidebar nav small {
-      color: var(--lm-faint-foreground);
-      font-size: var(--lm-text-xs);
-      margin-left: var(--lm-space-2);
+      color: var(--faint-foreground);
+      font-size: var(--text-8);
+      margin-left: var(--space-2);
     }
 
     .section-permalink {
       display: block;
-      margin-top: var(--lm-space-4);
-      font-size: var(--lm-text-sm);
-      color: var(--lm-muted-foreground);
+      margin-top: var(--space-4);
+      font-size: var(--text-7);
+      color: var(--muted-foreground);
     }
 
     .section-permalink:hover {
-      color: var(--lm-foreground);
+      color: var(--foreground);
     }
 
     .sidebar-example .demo-box {
       position: relative;
       height: 300px;
-      border: 1px solid var(--lm-border);
-      border-radius: var(--lm-radius);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       overflow: hidden;
 
       aside {
@@ -98,7 +98,7 @@
 <body>
   <!-- Navigation Sidebar -->
   <aside class="sidebar demo-sidebar">
-    <h4 style="margin-bottom: var(--lm-space-4);">
+    <h4 style="margin-bottom: var(--space-4);">
       <a href="/" style="text-decoration: none; color: inherit;">lmui</a>
     </h4>
     <nav>
@@ -124,14 +124,14 @@
         </div>
       </details>
     </nav>
-    <div style="margin-top: auto; padding-top: var(--lm-space-4);">
+    <div style="margin-top: auto; padding-top: var(--space-4);">
       <button class="outline sm" style="width: 100%;" onclick="toggleTheme()">Toggle Dark mode</button>
     </div>
   </aside>
 
   <!-- Main Content -->
   <div class="sidebar-content">
-    <div class="container" style="padding: var(--lm-space-12) var(--lm-space-6);">
+    <div class="container" style="padding: var(--space-12) var(--space-6);">
       {% block content %}{% endblock %}
     </div>
   </div>

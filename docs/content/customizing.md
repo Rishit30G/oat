@@ -13,73 +13,73 @@ The following color variables from theme.css control the theme (colour profile).
 :root {
 
   /* Page background */
-  --lm-background: rgb(255 255 255);
+  --background: rgb(255 255 255);
 
   /* Primary text color */
-  --lm-foreground: rgb(9 9 11);
+  --foreground: rgb(9 9 11);
 
   /* Card background */
-  --lm-card: rgb(255 255 255);
+  --card: rgb(255 255 255);
 
   /* Card text color */
-  --lm-card-foreground: rgb(9 9 11);
+  --card-foreground: rgb(9 9 11);
 
   /* Primary buttons and links */
-  --lm-primary: rgb(24 24 27);
+  --primary: rgb(24 24 27);
 
   /* Text color on primary buttons */
-  --lm-primary-foreground: rgb(250 250 250);
+  --primary-foreground: rgb(250 250 250);
 
   /* Secondary button background */
-  --lm-secondary: rgb(244 244 245);
+  --secondary: rgb(244 244 245);
 
   /* Text colour on secondary buttons */
-  --lm-secondary-foreground: rgb(24 24 27);
+  --secondary-foreground: rgb(24 24 27);
 
   /* Muted (lighter) background */
-  --lm-muted: rgb(244 244 245);
+  --muted: rgb(244 244 245);
 
   /* Muted (lighter) text colour */
-  --lm-muted-foreground: rgb(113 113 122);
+  --muted-foreground: rgb(113 113 122);
 
   /* Subtler than muted background */
-  --lm-faint: rgb(250 250 250);
+  --faint: rgb(250 250 250);
 
   /* Subtler than muted text color */
-  --lm-faint-foreground: rgb(161 161 170);
+  --faint-foreground: rgb(161 161 170);
 
   /* Accent background */
-  --lm-accent: rgb(244 244 245);
+  --accent: rgb(244 244 245);
 
   /* Accent text color */
-  --lm-accent-foreground: rgb(24 24 27);
+  --accent-foreground: rgb(24 24 27);
 
   /* Error/danger color */
-  --lm-danger: rgb(223 81 76);
+  --danger: rgb(223 81 76);
 
   /* Text color on danger background */
-  --lm-danger-foreground: rgb(250 250 250);
+  --danger-foreground: rgb(250 250 250);
 
   /* Success color */
-  --lm-success: rgb(76 175 80);
+  --success: rgb(76 175 80);
 
   /* Text colour on success background */
-  --lm-success-foreground: rgb(250 250 250);
+  --success-foreground: rgb(250 250 250);
 
   /* Warning color */
-  --lm-warning: rgb(255 140 0);
+  --warning: rgb(255 140 0);
 
   /* Text colour on warning background */
-  --lm-warning-foreground: rgb(9 9 11);
+  --warning-foreground: rgb(9 9 11);
 
   /* Border color (boxes) */
-  --lm-border: rgb(212 212 216);
+  --border: rgb(212 212 216);
 
   /* Input borders */
-  --lm-input: rgb(212 212 216);
+  --input: rgb(212 212 216);
 
   /* Focus ring color */
-  --lm-ring: rgb(24 24 27);
+  --ring: rgb(24 24 27);
 }
 ```
 

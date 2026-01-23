@@ -2,13 +2,13 @@
   menu[popover] {
     position: fixed;
     margin: 0;
-    padding: var(--lm-space-1);
+    padding: var(--space-1);
     list-style: none;
     min-width: 12rem;
-    background-color: var(--lm-background);
-    border: 1px solid var(--lm-border);
-    border-radius: var(--lm-radius);
-    box-shadow: var(--lm-shadow-medium);
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     opacity: 0;
     transform: translateY(-4px);
     transition:
@@ -30,7 +30,7 @@
     }
 
     hr {
-      margin: var(--lm-space-1) 0;
+      margin: var(--space-1) 0;
     }
   }
 
@@ -38,19 +38,19 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: var(--lm-space-2);
+    gap: var(--space-2);
     width: 100%;
-    padding: var(--lm-space-2) var(--lm-space-3);
-    font-size: var(--lm-text-7);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-7);
     text-align: left;
-    color: var(--lm-foreground);
+    color: var(--foreground);
     background: none;
     border: none;
-    border-radius: var(--lm-radius-small);
+    border-radius: var(--radius-small);
     cursor: pointer;
 
     &:hover, &:focus {
-      background-color: var(--lm-accent);
+      background-color: var(--accent);
       outline: none;
     }
   }

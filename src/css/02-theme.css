@@ -1,129 +1,119 @@
 @layer theme {
   :root {
-    --lm-background: rgb(255 255 255);
-    --lm-foreground: rgb(9 9 11);
-    --lm-card: rgb(255 255 255);
-    --lm-card-foreground: rgb(9 9 11);
-    --lm-primary: rgb(24 24 27);
-    --lm-primary-foreground: rgb(250 250 250);
-    --lm-secondary: rgb(244 244 245);
-    --lm-secondary-foreground: rgb(24 24 27);
-    --lm-muted: rgb(244 244 245);
-    --lm-muted-foreground: rgb(113 113 122);
-    --lm-faint: rgb(250, 250, 250);
-    --lm-faint-foreground: rgb(161 161 170);
-    --lm-accent: rgb(244 244 245);
-    --lm-accent-foreground: rgb(24 24 27);
-    --lm-danger: rgb(223 81 76);
-    --lm-danger-foreground: rgb(250 250 250);
-    --lm-success: rgb(76 175 80);
-    --lm-success-foreground: rgb(250 250 250);
-    --lm-warning: rgb(255 140 0);
-    --lm-warning-foreground: rgb(9 9 11);
-    --lm-border: rgb(212 212 216);
-    --lm-input: rgb(212 212 216);
-    --lm-ring: rgb(24 24 27);
+    --background: rgb(255 255 255);
+    --foreground: rgb(9 9 11);
+    --card: rgb(255 255 255);
+    --card-foreground: rgb(9 9 11);
+    --primary: rgb(24 24 27);
+    --primary-foreground: rgb(250 250 250);
+    --secondary: rgb(244 244 245);
+    --secondary-foreground: rgb(24 24 27);
+    --muted: rgb(244 244 245);
+    --muted-foreground: rgb(113 113 122);
+    --faint: rgb(250 250 250);
+    --accent: rgb(244 244 245);
+    --danger: rgb(223 81 76);
+    --danger-foreground: rgb(250 250 250);
+    --success: rgb(76 175 80);
+    --success-foreground: rgb(250 250 250);
+    --warning: rgb(255 140 0);
+    --warning-foreground: rgb(9 9 11);
+    --border: rgb(212 212 216);
+    --input: rgb(212 212 216);
+    --ring: rgb(24 24 27);
 
-    --lm-space-1: 0.25rem;
-    --lm-space-2: 0.5rem;
-    --lm-space-3: 0.75rem;
-    --lm-space-4: 1rem;
-    --lm-space-5: 1.25rem;
-    --lm-space-6: 1.5rem;
-    --lm-space-8: 2rem;
-    --lm-space-10: 2.5rem;
-    --lm-space-12: 3rem;
-    --lm-space-14: 3.5rem;
-    --lm-space-16: 4rem;
-    --lm-space-18: 4.5rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-14: 3.5rem;
+    --space-16: 4rem;
+    --space-18: 4.5rem;
 
-    --lm-radius-small: 0.125rem;
-    --lm-radius: 0.375rem;
-    --lm-radius-medium: 0.5rem;
-    --lm-radius-large: 0.75rem;
-    --lm-radius-full: 9999px;
+    --radius-small: 0.125rem;
+    --radius-medium: 0.375rem;
+    --radius-large: 0.75rem;
+    --radius-full: 9999px;
 
-    --lm-bar-height: 0.5rem;
+    --bar-height: 0.5rem;
 
-    --lm-font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --lm-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 
-    --lm-text-1: 2.25rem;
-    --lm-text-2: 1.875rem;
-    --lm-text-3: 1.5rem;
-    --lm-text-4: 1.25rem;
-    --lm-text-5: 1.125rem;
-    --lm-text-6: 1rem;
-    --lm-text-7: 0.875rem;
-    --lm-text-8: 0.75rem;
-    --lm-text-regular: var(--lm-text-6);
+    --text-1: 3rem;
+    --text-2: 2.25rem;
+    --text-3: 1.875rem;
+    --text-4: 1.5rem;
+    --text-5: 1.25rem;
+    --text-6: 1rem;
+    --text-7: 0.875rem;
+    --text-8: 0.75rem;
+    --text-regular: var(--text-6);
 
-    --lm-leading-tight: 1.25;
-    --lm-leading-normal: 1.5;
-    --lm-tracking-tight: -0.025em;
+    --leading-normal: 1.5;
 
-    --lm-font-normal: 400;
-    --lm-font-medium: 500;
-    --lm-font-semibold: 600;
-    --lm-font-bold: 700;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 600;
 
-    --lm-shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --lm-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --lm-shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --lm-shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-small: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-medium: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-large: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
-    --lm-transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
-    --lm-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    --lm-z-dropdown: 50;
-    --lm-z-modal: 200;
+    --z-dropdown: 50;
+    --z-modal: 200;
   }
 
   [data-theme="dark"] {
-    --lm-background: rgb(9 9 11);
-    --lm-foreground: rgb(250 250 250);
-    --lm-card: rgb(24 24 27);
-    --lm-card-foreground: rgb(250 250 250);
-    --lm-primary: rgb(250 250 250);
-    --lm-primary-foreground: rgb(24 24 27);
-    --lm-secondary: rgb(39 39 42);
-    --lm-secondary-foreground: rgb(250 250 250);
-    --lm-muted: rgb(39 39 42);
-    --lm-muted-foreground: rgb(161 161 170);
-    --lm-faint: rgb(30 30 33);
-    --lm-faint-foreground: rgb(113 113 122);
-    --lm-accent: rgb(39 39 42);
-    --lm-accent-foreground: rgb(250 250 250);
-    --lm-danger-foreground: rgb(250 250 250);
-    --lm-success-foreground: rgb(250 250 250);
-    --lm-warning-foreground: rgb(9 9 11);
-    --lm-border: rgb(82 82 91);
-    --lm-input: rgb(82 82 91);
-    --lm-ring: rgb(212 212 216);
+    --background: rgb(9 9 11);
+    --foreground: rgb(250 250 250);
+    --card: rgb(24 24 27);
+    --card-foreground: rgb(250 250 250);
+    --primary: rgb(250 250 250);
+    --primary-foreground: rgb(24 24 27);
+    --secondary: rgb(39 39 42);
+    --secondary-foreground: rgb(250 250 250);
+    --muted: rgb(39 39 42);
+    --muted-foreground: rgb(161 161 170);
+    --faint: rgb(30 30 33);
+    --accent: rgb(39 39 42);
+    --danger-foreground: rgb(250 250 250);
+    --success-foreground: rgb(250 250 250);
+    --warning-foreground: rgb(9 9 11);
+    --border: rgb(82 82 91);
+    --input: rgb(82 82 91);
+    --ring: rgb(212 212 216);
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --lm-background: rgb(9 9 11);
-      --lm-foreground: rgb(250 250 250);
-      --lm-card: rgb(24 24 27);
-      --lm-card-foreground: rgb(250 250 250);
-      --lm-primary: rgb(250 250 250);
-      --lm-primary-foreground: rgb(24 24 27);
-      --lm-secondary: rgb(39 39 42);
-      --lm-secondary-foreground: rgb(250 250 250);
-      --lm-muted: rgb(39 39 42);
-      --lm-muted-foreground: rgb(161 161 170);
-      --lm-faint: rgb(30 30 33);
-      --lm-faint-foreground: rgb(113 113 122);
-      --lm-accent: rgb(39 39 42);
-      --lm-accent-foreground: rgb(250 250 250);
-      --lm-danger-foreground: rgb(250 250 250);
-      --lm-success-foreground: rgb(250 250 250);
-      --lm-warning-foreground: rgb(9 9 11);
-      --lm-border: rgb(82 82 91);
-      --lm-input: rgb(82 82 91);
-      --lm-ring: rgb(212 212 216);
+      --background: rgb(9 9 11);
+      --foreground: rgb(250 250 250);
+      --card: rgb(24 24 27);
+      --card-foreground: rgb(250 250 250);
+      --primary: rgb(250 250 250);
+      --primary-foreground: rgb(24 24 27);
+      --secondary: rgb(39 39 42);
+      --secondary-foreground: rgb(250 250 250);
+      --muted: rgb(39 39 42);
+      --muted-foreground: rgb(161 161 170);
+      --faint: rgb(30 30 33);
+      --accent: rgb(39 39 42);
+      --danger-foreground: rgb(250 250 250);
+      --success-foreground: rgb(250 250 250);
+      --warning-foreground: rgb(9 9 11);
+      --border: rgb(82 82 91);
+      --input: rgb(82 82 91);
+      --ring: rgb(212 212 216);
     }
   }
 }

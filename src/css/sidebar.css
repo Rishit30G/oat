@@ -5,11 +5,11 @@
     left: 0;
     width: 16rem;
     height: 100dvh;
-    padding: var(--lm-space-3);
-    background-color: var(--lm-background);
-    border-right: 1px solid var(--lm-border);
+    padding: var(--space-3);
+    background-color: var(--background);
+    border-right: 1px solid var(--border);
     overflow-y: auto;
-    z-index: var(--lm-z-dropdown);
+    z-index: var(--z-dropdown);
     display: flex;
     flex-direction: column;
   }
@@ -17,22 +17,22 @@
   aside.sidebar nav {
     display: flex;
     flex-direction: column;
-    gap: var(--lm-space-1);
+    gap: var(--space-1);
   }
 
   aside.sidebar a {
     display: flex;
     justify-content: flex-start;
-    gap: var(--lm-space-2);
-    padding: var(--lm-space-1) var(--lm-space-3);
-    font-size: var(--lm-text-7);
-    color: var(--lm-foreground);
+    gap: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-7);
+    color: var(--foreground);
     text-decoration: none;
-    border-radius: var(--lm-radius-small);
-    transition: background-color var(--lm-transition-fast);
+    border-radius: var(--radius-small);
+    transition: background-color var(--transition-fast);
 
     &:hover, &[aria-current] {
-      background-color: var(--lm-accent);
+      background-color: var(--accent);
     }
   }
 
@@ -51,27 +51,27 @@
     & > *:not(summary) {
       display: flex;
       flex-direction: column;
-      gap: var(--lm-space-1);
-      padding: var(--lm-space-1) 0;
+      gap: var(--space-1);
+      padding: var(--space-1) 0;
     }
 
     & a {
-      padding-inline-start: calc(var(--lm-space-3) + 1rem + var(--lm-space-2));
+      padding-inline-start: calc(var(--space-3) + 1rem + var(--space-2));
 
       &:hover {
-        color: var(--lm-foreground);
+        color: var(--foreground);
       }
     }
   }
 
   aside.sidebar :where(summary) {
     justify-content: flex-start;
-    gap: var(--lm-space-2);
-    padding: var(--lm-space-2) var(--lm-space-3);
-    font-size: var(--lm-text-7);
-    font-weight: var(--lm-font-medium);
-    color: var(--lm-foreground);
-    border-radius: var(--lm-radius-small);
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-7);
+    font-weight: var(--font-medium);
+    color: var(--foreground);
+    border-radius: var(--radius-small);
 
     &::after {
       width: 0.75rem;
@@ -87,8 +87,8 @@
   @media (max-width: 768px) {
     aside.sidebar {
       transform: translateX(-100%);
-      transition: transform var(--lm-transition);
-      box-shadow: var(--lm-shadow-large);
+      transition: transform var(--transition);
+      box-shadow: var(--shadow-large);
     }
 
     aside.sidebar[data-open] {

@@ -2,16 +2,16 @@
   dialog {
     position: fixed;
     inset: 0;
-    z-index: var(--lm-z-modal);
+    z-index: var(--z-modal);
     width: 100%;
     max-width: 32rem;
     max-height: 85vh;
     margin: auto;
     padding: 0;
-    background-color: var(--lm-card);
-    border: 1px solid var(--lm-border);
-    border-radius: var(--lm-radius-medium);
-    box-shadow: var(--lm-shadow-large);
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-large);
     overflow: hidden;
 
     opacity: 0;
@@ -56,8 +56,8 @@
     & > form > header {
       display: flex;
       flex-direction: column;
-      gap: var(--lm-space-1);
-      padding: var(--lm-space-6);
+      gap: var(--space-1);
+      padding: var(--space-6);
       padding-bottom: 0;
 
       & > h1, & > h2, & > h3, & > h4, & > h5, & > h6 {
@@ -65,15 +65,15 @@
       }
 
       & > p {
-        font-size: var(--lm-text-7);
-        color: var(--lm-muted-foreground);
+        font-size: var(--text-7);
+        color: var(--muted-foreground);
         margin-bottom: 0;
       }
     }
 
     & > p, & > div, & > section,
     & > form > p, & > form > div, & > form > section {
-      padding: var(--lm-space-6);
+      padding: var(--space-6);
       overflow-y: auto;
     }
 
@@ -81,8 +81,8 @@
     & > form > footer {
       display: flex;
       justify-content: flex-end;
-      gap: var(--lm-space-2);
-      padding: var(--lm-space-6);
+      gap: var(--space-2);
+      padding: var(--space-6);
       padding-top: 0;
     }
   }

@@ -85,7 +85,7 @@ lm.toast = function (message, title, options = {}) {
   const titleEl = document.createElement('h6');
   titleEl.className = 'toast-title';
   if (variant) {
-    titleEl.style.color = `var(--lm-${variant})`;
+    titleEl.style.color = `var(--${variant})`;
   }
   titleEl.textContent = title || titleText;
   toast.appendChild(titleEl);

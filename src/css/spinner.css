@@ -2,10 +2,10 @@
   .spinner {
     width: 1.5rem;
     height: 1.5rem;
-    border: 2px solid var(--lm-muted);
-    border-top-color: var(--lm-primary);
-    border-radius: var(--lm-radius-full);
-    animation: lm-spin 1s linear infinite;
+    border: 2px solid var(--muted);
+    border-top-color: var(--primary);
+    border-radius: var(--radius-full);
+    animation: spin 1s linear infinite;
 
     &.small {
       width: 1rem;
@@ -19,7 +19,7 @@
     }
   }
 
-  @keyframes lm-spin {
+  @keyframes spin {
     to {
       transform: rotate(360deg);
     }

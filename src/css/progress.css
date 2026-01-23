@@ -2,74 +2,74 @@
   progress {
     appearance: none;
     width: 100%;
-    height: var(--lm-bar-height);
+    height: var(--bar-height);
     border: none;
-    border-radius: var(--lm-radius-full);
+    border-radius: var(--radius-full);
     overflow: hidden;
-    background-color: var(--lm-muted);
+    background-color: var(--muted);
 
     &::-webkit-progress-bar {
-      background-color: var(--lm-muted);
-      border-radius: var(--lm-radius-full);
+      background-color: var(--muted);
+      border-radius: var(--radius-full);
     }
 
     &::-webkit-progress-value {
-      background-color: var(--lm-primary);
-      border-radius: var(--lm-radius-full);
-      transition: width var(--lm-transition);
+      background-color: var(--primary);
+      border-radius: var(--radius-full);
+      transition: width var(--transition);
     }
 
     &::-moz-progress-bar {
-      background-color: var(--lm-primary);
-      border-radius: var(--lm-radius-full);
+      background-color: var(--primary);
+      border-radius: var(--radius-full);
     }
   }
 
   meter {
     appearance: none;
     width: 100%;
-    height: var(--lm-bar-height);
+    height: var(--bar-height);
     border: none;
-    border-radius: var(--lm-radius-full);
+    border-radius: var(--radius-full);
     overflow: hidden;
-    background: var(--lm-muted);
+    background: var(--muted);
 
     &::-webkit-meter-bar {
-      background: var(--lm-muted);
+      background: var(--muted);
       border: none;
-      border-radius: var(--lm-radius-full);
-      height: var(--lm-bar-height);
+      border-radius: var(--radius-full);
+      height: var(--bar-height);
     }
 
     &::-webkit-meter-optimum-value,
     &::-webkit-meter-suboptimum-value,
     &::-webkit-meter-even-less-good-value {
-      border-radius: var(--lm-radius-full);
+      border-radius: var(--radius-full);
     }
 
     &::-webkit-meter-optimum-value {
-      background: var(--lm-success);
+      background: var(--success);
     }
 
     &::-webkit-meter-suboptimum-value {
-      background: var(--lm-warning);
+      background: var(--warning);
     }
 
     &::-webkit-meter-even-less-good-value {
-      background: var(--lm-danger);
+      background: var(--danger);
     }
 
     &::-moz-meter-bar {
-      background: var(--lm-success);
-      border-radius: var(--lm-radius-full);
+      background: var(--success);
+      border-radius: var(--radius-full);
     }
 
     &:-moz-meter-sub-optimum::-moz-meter-bar {
-      background: var(--lm-warning);
+      background: var(--warning);
     }
 
     &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
-      background: var(--lm-danger);
+      background: var(--danger);
     }
   }
 }

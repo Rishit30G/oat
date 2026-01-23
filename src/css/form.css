@@ -1,17 +1,17 @@
 @layer base {
   label {
     display: block;
-    font-size: var(--lm-text-7);
-    font-weight: var(--lm-font-medium);
-    margin-bottom: var(--lm-space-2);
+    font-size: var(--text-7);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--space-2);
 
     &:has(input:not([type="checkbox"]):not([type="radio"])),
     &:has(textarea),
     &:has(select) {
-      margin-bottom: var(--lm-space-4);
+      margin-bottom: var(--space-4);
 
       input, textarea, select {
-        margin-top: var(--lm-space-2);
+        margin-top: var(--space-2);
       }
     }
 
@@ -19,8 +19,8 @@
     &:has(input[type="radio"]) {
       display: inline-flex;
       align-items: center;
-      gap: var(--lm-space-2);
-      font-weight: var(--lm-font-normal);
+      gap: var(--space-2);
+      font-weight: var(--font-normal);
       cursor: pointer;
     }
   }
@@ -31,34 +31,34 @@
     display: block;
     width: 100%;
     height: 2.5rem;
-    padding: 0 var(--lm-space-3);
-    font-size: var(--lm-text-7);
-    line-height: var(--lm-leading-normal);
-    background-color: var(--lm-background);
-    color: var(--lm-foreground);
-    border: 1px solid var(--lm-input);
-    border-radius: var(--lm-radius);
-    transition: border-color var(--lm-transition-fast), box-shadow var(--lm-transition-fast);
+    padding: 0 var(--space-3);
+    font-size: var(--text-7);
+    line-height: var(--leading-normal);
+    background-color: var(--background);
+    color: var(--foreground);
+    border: 1px solid var(--input);
+    border-radius: var(--radius-medium);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 
     &::placeholder {
-      color: var(--lm-muted-foreground);
+      color: var(--muted-foreground);
     }
 
     &:focus {
       outline: none;
-      border-color: var(--lm-ring);
-      box-shadow: 0 0 0 2px rgb(from var(--lm-ring) r g b / 0.2);
+      border-color: var(--ring);
+      box-shadow: 0 0 0 2px rgb(from var(--ring) r g b / 0.2);
     }
 
     &:disabled {
-      background-color: var(--lm-muted);
+      background-color: var(--muted);
     }
 
     &[aria-invalid="true"], &:user-invalid {
-      border-color: var(--lm-danger);
+      border-color: var(--danger);
 
       &:focus {
-        box-shadow: 0 0 0 2px rgb(from var(--lm-danger) r g b / 0.2);
+        box-shadow: 0 0 0 2px rgb(from var(--danger) r g b / 0.2);
       }
     }
   }
@@ -66,7 +66,7 @@
   textarea {
     height: auto;
     min-height: 5rem;
-    padding: var(--lm-space-3);
+    padding: var(--space-3);
     resize: vertical;
   }
 
@@ -74,8 +74,8 @@
     appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2371717a' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-    background-position: right var(--lm-space-3) center;
-    padding-right: var(--lm-space-10);
+    background-position: right var(--space-3) center;
+    padding-right: var(--space-10);
   }
 
   input[type="checkbox"], input[type="radio"] {
@@ -83,21 +83,21 @@
     width: 1rem;
     height: 1rem;
     margin: 0;
-    background-color: var(--lm-background);
-    border: 1px solid var(--lm-input);
+    background-color: var(--background);
+    border: 1px solid var(--input);
     cursor: pointer;
-    transition: background-color var(--lm-transition-fast), border-color var(--lm-transition-fast);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast);
 
     &:checked {
-      background-color: var(--lm-primary);
-      border-color: var(--lm-primary);
+      background-color: var(--primary);
+      border-color: var(--primary);
       background-position: center;
       background-repeat: no-repeat;
     }
   }
 
   input[type="checkbox"] {
-    border-radius: var(--lm-radius-small);
+    border-radius: var(--radius-small);
 
     &:checked {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
@@ -106,7 +106,7 @@
   }
 
   input[type="radio"] {
-    border-radius: var(--lm-radius-full);
+    border-radius: var(--radius-full);
 
     &:checked {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='4' fill='white'/%3E%3C/svg%3E");
@@ -115,14 +115,14 @@
   }
 
   input[type="checkbox"][role="switch"] {
-    --_switch-height: calc(var(--lm-bar-height) * 3);
+    --_switch-height: calc(var(--bar-height) * 3);
     --_switch-inset: 2px;
     --_switch-thumb: calc(var(--_switch-height) - var(--_switch-inset) * 3);
 
     width: calc(var(--_switch-height) * 2);
     height: var(--_switch-height);
-    border-radius: var(--lm-radius-full);
-    background-color: var(--lm-input);
+    border-radius: var(--radius-full);
+    background-color: var(--input);
     position: relative;
 
     &::before {
@@ -133,14 +133,14 @@
       transform: translateY(-50%);
       width: var(--_switch-thumb);
       height: var(--_switch-thumb);
-      background-color: var(--lm-background);
-      border-radius: var(--lm-radius-full);
-      transition: transform var(--lm-transition);
-      box-shadow: var(--lm-shadow-small);
+      background-color: var(--background);
+      border-radius: var(--radius-full);
+      transition: transform var(--transition);
+      box-shadow: var(--shadow-small);
     }
 
     &:checked {
-      background-color: var(--lm-primary);
+      background-color: var(--primary);
       background-image: none;
 
       &::before {
@@ -151,20 +151,20 @@
 
   input[type="range"] {
     width: 100%;
-    height: var(--lm-bar-height);
+    height: var(--bar-height);
     appearance: none;
-    background: var(--lm-muted);
-    border-radius: var(--lm-radius-full);
+    background: var(--muted);
+    border-radius: var(--radius-full);
     cursor: pointer;
 
     &::-webkit-slider-thumb {
       appearance: none;
       width: 1.25rem;
       height: 1.25rem;
-      background: var(--lm-primary);
-      border-radius: var(--lm-radius-full);
+      background: var(--primary);
+      border-radius: var(--radius-full);
       cursor: pointer;
-      transition: transform var(--lm-transition-fast);
+      transition: transform var(--transition-fast);
 
       &:hover {
         transform: scale(1.1);
@@ -174,24 +174,24 @@
     &::-moz-range-thumb {
       width: 1.25rem;
       height: 1.25rem;
-      background: var(--lm-primary);
+      background: var(--primary);
       border: none;
-      border-radius: var(--lm-radius-full);
+      border-radius: var(--radius-full);
       cursor: pointer;
     }
   }
 
   fieldset {
-    border: 1px solid var(--lm-border);
-    border-radius: var(--lm-radius);
-    padding: var(--lm-space-4);
-    margin-bottom: var(--lm-space-4);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium);
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
   }
 
   legend {
-    font-size: var(--lm-text-7);
-    font-weight: var(--lm-font-medium);
-    padding: 0 var(--lm-space-2);
+    font-size: var(--text-7);
+    font-weight: var(--font-medium);
+    padding: 0 var(--space-2);
   }
 }
 
@@ -217,67 +217,67 @@
       border-radius: 0;
 
       &:first-child {
-        border-start-start-radius: var(--lm-radius);
-        border-end-start-radius: var(--lm-radius);
+        border-start-start-radius: var(--radius-medium);
+        border-end-start-radius: var(--radius-medium);
       }
 
       &:last-child {
-        border-start-end-radius: var(--lm-radius);
-        border-end-end-radius: var(--lm-radius);
+        border-start-end-radius: var(--radius-medium);
+        border-end-end-radius: var(--radius-medium);
       }
     }
 
     & > legend {
       float: inline-start;
-      padding: 0 var(--lm-space-3);
+      padding: 0 var(--space-3);
       height: 2.5rem;
       line-height: 2.5rem;
-      font-weight: var(--lm-font-normal);
-      color: var(--lm-muted-foreground);
-      background-color: var(--lm-muted);
-      border: 1px solid var(--lm-input);
+      font-weight: var(--font-normal);
+      color: var(--muted-foreground);
+      background-color: var(--muted);
+      border: 1px solid var(--input);
       border-inline-end: none;
-      border-start-start-radius: var(--lm-radius);
-      border-end-start-radius: var(--lm-radius);
+      border-start-start-radius: var(--radius-medium);
+      border-end-start-radius: var(--radius-medium);
     }
 
     & > span, & > .prefix, & > .suffix {
       display: flex;
       align-items: center;
-      padding: 0 var(--lm-space-3);
-      font-size: var(--lm-text-7);
-      color: var(--lm-muted-foreground);
-      background-color: var(--lm-muted);
-      border: 1px solid var(--lm-input);
+      padding: 0 var(--space-3);
+      font-size: var(--text-7);
+      color: var(--muted-foreground);
+      background-color: var(--muted);
+      border: 1px solid var(--input);
       border-radius: 0;
 
       &:first-child {
         border-inline-end: none;
-        border-start-start-radius: var(--lm-radius);
-        border-end-start-radius: var(--lm-radius);
+        border-start-start-radius: var(--radius-medium);
+        border-end-start-radius: var(--radius-medium);
       }
 
       &:last-child {
         border-inline-start: none;
-        border-start-end-radius: var(--lm-radius);
-        border-end-end-radius: var(--lm-radius);
+        border-start-end-radius: var(--radius-medium);
+        border-end-end-radius: var(--radius-medium);
       }
     }
   }
 
   .field {
-    margin-bottom: var(--lm-space-4);
+    margin-bottom: var(--space-4);
 
     & > label {
-      margin-bottom: var(--lm-space-2);
+      margin-bottom: var(--space-2);
     }
 
     & > :is(.error, [data-error], .hint, [data-hint]) {
-      font-size: var(--lm-text-7);
-      margin-top: var(--lm-space-1);
+      font-size: var(--text-7);
+      margin-top: var(--space-1);
     }
 
-    & > :is(.error, [data-error]) { color: var(--lm-danger); }
-    & > :is(.hint, [data-hint]) { color: var(--lm-muted-foreground); }
+    & > :is(.error, [data-error]) { color: var(--danger); }
+    & > :is(.hint, [data-hint]) { color: var(--muted-foreground); }
   }
 }

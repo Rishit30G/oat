@@ -3,24 +3,24 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: var(--lm-space-2);
+    gap: var(--space-2);
     height: 2.5rem;
-    padding: 0 var(--lm-space-4);
-    font-size: var(--lm-text-7);
-    font-weight: var(--lm-font-medium);
+    padding: 0 var(--space-4);
+    font-size: var(--text-7);
+    font-weight: var(--font-medium);
     line-height: 1;
     white-space: nowrap;
     text-decoration: none;
-    background-color: var(--lm-primary);
-    color: var(--lm-primary-foreground);
-    border-radius: var(--lm-radius);
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-radius: var(--radius-medium);
     border: 1px solid;
     border-color: rgb(255 255 255 / 0.15) rgb(0 0 0 / 0.2) rgb(0 0 0 / 0.2) rgb(255 255 255 / 0.15);
-    transition: background-color var(--lm-transition-fast), opacity var(--lm-transition-fast), transform var(--lm-transition-fast);
+    transition: background-color var(--transition-fast), opacity var(--transition-fast), transform var(--transition-fast);
 
     &:hover:not(:disabled) {
-      background-color: color-mix(in srgb, var(--lm-primary), white 25%);
-      color: var(--lm-primary-foreground);
+      background-color: color-mix(in srgb, var(--primary), white 25%);
+      color: var(--primary-foreground);
     }
 
     &:active:not(:disabled) {
@@ -28,58 +28,58 @@
     }
 
     &.secondary {
-      background-color: var(--lm-secondary);
-      color: var(--lm-secondary-foreground);
+      background-color: var(--secondary);
+      color: var(--secondary-foreground);
       border-color: rgb(255 255 255 / 0.5) rgb(0 0 0 / 0.1) rgb(0 0 0 / 0.1) rgb(255 255 255 / 0.5);
 
       &:hover:not(:disabled) {
-        background-color: color-mix(in srgb, var(--lm-secondary), black 10%);
-        color: var(--lm-secondary-foreground);
+        background-color: color-mix(in srgb, var(--secondary), black 10%);
+        color: var(--secondary-foreground);
       }
     }
 
     &.outline {
       background-color: transparent;
-      color: var(--lm-foreground);
-      border-color: var(--lm-border);
+      color: var(--foreground);
+      border-color: var(--border);
 
       &:hover:not(:disabled) {
-        background-color: var(--lm-accent);
-        color: var(--lm-foreground);
+        background-color: var(--accent);
+        color: var(--foreground);
       }
     }
 
     &.ghost {
       background-color: transparent;
-      color: var(--lm-foreground);
+      color: var(--foreground);
       border-color: transparent;
 
       &:hover:not(:disabled) {
-        background-color: var(--lm-accent);
-        color: var(--lm-foreground);
+        background-color: var(--accent);
+        color: var(--foreground);
       }
     }
 
     &.danger {
-      background-color: var(--lm-danger);
-      color: var(--lm-danger-foreground);
+      background-color: var(--danger);
+      color: var(--danger-foreground);
 
       &:hover:not(:disabled) {
-        background-color: color-mix(in srgb, var(--lm-danger), black 15%);
-        color: var(--lm-danger-foreground);
+        background-color: color-mix(in srgb, var(--danger), black 15%);
+        color: var(--danger-foreground);
       }
     }
 
     &.small {
       height: 2rem;
-      padding: 0 var(--lm-space-3);
-      font-size: var(--lm-text-8);
+      padding: 0 var(--space-3);
+      font-size: var(--text-8);
     }
 
     &.large {
       height: 3rem;
-      padding: 0 var(--lm-space-6);
-      font-size: var(--lm-text-regular);
+      padding: 0 var(--space-6);
+      font-size: var(--text-regular);
     }
 
     &.icon {
@@ -106,17 +106,17 @@
       border-radius: 0;
 
       &:first-child {
-        border-start-start-radius: var(--lm-radius);
-        border-end-start-radius: var(--lm-radius);
+        border-start-start-radius: var(--radius-medium);
+        border-end-start-radius: var(--radius-medium);
       }
 
       &:last-child {
-        border-start-end-radius: var(--lm-radius);
-        border-end-end-radius: var(--lm-radius);
+        border-start-end-radius: var(--radius-medium);
+        border-end-end-radius: var(--radius-medium);
       }
 
       &:not(:last-child) {
-        border-inline-end: 1px solid rgb(from var(--lm-primary-foreground) r g b / 0.2);
+        border-inline-end: 1px solid rgb(from var(--primary-foreground) r g b / 0.2);
       }
     }
   }
